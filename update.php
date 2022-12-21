@@ -4,10 +4,10 @@
 if (isset($_GET["id"])) {
     $id = $_GET['id'];
 
-    //1. buat koneksi dengan MySQL
+    // 1. buat koneksi dengan MySQL
     $con = mysqli_connect("localhost","root","","todolist");
 
-    //2. cek koneksi dengan MySQL
+    // 2. cek koneksi dengan MySQL
     if (mysqli_connect_errno()) {
         echo "koneksi gagal:" . mysqli_connect_error();
         exit();

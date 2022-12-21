@@ -8,13 +8,12 @@ desc todo;
 select * from todo;
 
 CREATE TABLE todo (
-    id int NOT NULL AUTO_INCREMENT,
-    task VARCHAR(255) NOT NULL,
-    status int DEFAULT 0,
-    PRIMARY KEY (id)
+  id INT NOT NULL AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  status VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
 );
 
-
--- cara masukin data ke table --
-insert into todo (task) values ("Tugas Web Basic");
+INSERT INTO todo (title, description, status) VALUES ('Todo 1', 'Description 1', 'Finished');
 
