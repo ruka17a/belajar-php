@@ -70,7 +70,7 @@
               </div>
 
               <div class="col-12">
-                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="submit" style="background-color:Indigo;" class="btn btn-primary">Save</button>
               </div>
 
             </form>
@@ -91,8 +91,8 @@
                   <td><?php echo ($value["title"]); ?></td>
                   <td><?php echo ($value['status'] == 0) ? "in progress": "finished";  ?></td>
                   <td>
-                    <a href="<?php echo 'delete.php?id=' .$value['id']; ?>" type="submit" class="btn btn-danger">Delete</button>
-                    <a href="<?php echo 'update.php?id=' .$value['id']; ?>" type="submit" class="btn btn-success ms-1">Finished</button>
+                    <a href="<?php echo 'delete.php?id=' .$value['id']; ?>" type="submit" style="background-color:Tomato;" class="btn btn-danger">Delete</button>
+                    <a href="<?php echo 'update.php?id=' .$value['id']; ?>" type="submit" style="background-color:SlateBlue;" class="btn btn-success ms-1">Finished</button>
                   </td>
                 </tr>
                 <?php endforeach; ?>
