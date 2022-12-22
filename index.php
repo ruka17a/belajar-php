@@ -88,7 +88,7 @@
                 <tr>
                   <?php foreach($todo as $key=>$value): ?>
                   <th scope="row"><?php echo $key+1; ?></th>
-                  <td><?php echo ($value["task"]); ?></td>
+                  <td><?php echo ($value["title"]); ?></td>
                   <td><?php echo ($value['status'] == 0) ? "in progress": "finished";  ?></td>
                   <td>
                     <a href="<?php echo 'delete.php?id=' .$value['id']; ?>" type="submit" class="btn btn-danger">Delete</button>
